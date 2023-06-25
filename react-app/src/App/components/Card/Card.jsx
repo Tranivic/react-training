@@ -33,14 +33,14 @@ class Card extends Component {
 
   // Computed
   getCounterDouble() {
-    return this.state.counter * 666;
+    return this.state.counter * 2;
   }
 
   render() {
     return (
       <div className="card-component">
         <h1>The random number is: {this.props.randomNumber}</h1>
-        <p>{this.state.counter}</p>
+        <p>Counter: {this.state.counter}</p>
         <p>Counter double: {this.getCounterDouble()}</p>
         <button onClick={this.handleClick}>Aperte aqui</button>
         <Item>{this.state.itemName}</Item>
