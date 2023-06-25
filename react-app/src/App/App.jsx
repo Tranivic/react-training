@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Card from "../components/Card";
+import Card from "./components/Card/Card";
 
 class App extends Component {
   render() {
@@ -7,8 +7,8 @@ class App extends Component {
       return a + b;
     };
 
-    const numbers = Array.from({ length: 100 }, () =>
-      parseInt(Math.random() * 1000000000)
+    const numbers = Array.from({ length: 5 }, () =>
+      parseInt(Math.random() * 1000000000000000)
     );
 
     return (
