@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Card from "./components/Card/Card";
+import FunctionBased from "./components/FunctionBased/FunctionBased";
 
 class App extends Component {
   render() {
@@ -7,7 +8,7 @@ class App extends Component {
       return a + b;
     };
 
-    const numbers = Array.from({ length: 5 }, () =>
+    const numbers = Array.from({ length: 2 }, () =>
       parseInt(Math.random() * 1000000000000000)
     );
 
@@ -23,6 +24,7 @@ class App extends Component {
               <Card randomNumber={randomNumber} />
             </div>
           ))}
+          <FunctionBased />
         </main>
       </>
     );

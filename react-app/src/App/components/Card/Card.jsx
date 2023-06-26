@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { PropTypes } from "prop-types";
 import "./Card.css";
-import Item from "../Item/Item";
+import Item from "../Item/Item.jsx";
 
 class Card extends Component {
   constructor(props) {
